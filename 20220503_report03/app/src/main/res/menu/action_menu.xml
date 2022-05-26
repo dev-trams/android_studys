@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="배경색">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/color_gray"
+                    android:title="회색" />
+                <item
+                    android:id="@+id/color_sian"
+                    android:title="시안색" />
+                <item
+                    android:id="@+id/color_red"
+                    android:title="빨간색" />
+                <item
+                    android:id="@+id/color_white"
+                    android:title="흰색" />
+            </group>
+        </menu>
+    </item>
+    <group android:checkableBehavior="all">
+        <item
+            android:id="@+id/text_blue"
+            android:title="글자색-파랑" />
+        <item
+            android:id="@+id/text_size_up"
+            android:title="글자크기(확대)" />
+    </group>
+    <item
+        android:id="@+id/text_size_reset"
+        android:title="글자크기(원본)" />
+    <item
+        android:id="@+id/ic_search"
+        android:icon="@drawable/ic_search"
+        android:title="menu"
+        android:visible="false"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/ic_add"
+        android:icon="@drawable/ic_add"
+        android:title="menu"
+        android:visible="false"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/ic_beginner"
+        android:icon="@drawable/ic_question"
+        android:title="@string/beginner"
+        android:visible="true"
+        app:showAsAction="always" />
+</menu>
